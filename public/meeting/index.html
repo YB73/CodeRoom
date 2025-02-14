@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/meeting/style.css">
+	<title>Meeting</title>
+</head>
+<body>
+	<div class="sidebar">
+    <p id="meeting_key" style="color: black;"></p>
+		<h3>Chat</h3>
+		<div class="chat-container">
+			<div class="chat-messages" id="chat-messages">
+				<!-- Chat messages will be displayed here -->
+				<br>
+			</div>
+			<div class="chat-input-container">
+				<input type="text" class="chat-input" id="chat-input" placeholder="Type your message...">
+				<button class="send-button" id="send-button">Send</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="video-container">
+		
+		<span class="video-grid" id="remoteVideos">
+			<span id="your_username" style="color: white;">You</span>
+			<video id="localVideo"  autoplay muted></video> 
+		</span> 
+		
+		<textarea id="textarea" rows="100" cols="50" style="margin-top:20px;margin-bottom: 30px;"></textarea>
+		
+	</div>
+	<span><button id="run" style="margin:10px;">Run</button></span>
+
+	<div class="code-output" id="code-output">
+		<!-- Chat messages will be displayed here -->
+		<br>
+	</div>
+
+	<!-- <textarea id="textarea" rows="200" cols="50"></textarea> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/assets/meeting/app.js"></script>
+</body>
+</html>
